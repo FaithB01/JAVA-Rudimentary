@@ -1,0 +1,26 @@
+services:
+  - serviceId: 1
+    serviceName: "Harambee Members Portal"
+    serviceHost: "selfservice.harambeesacco.com"
+    servicePort: 443
+    serviceResourceUri: "/"
+    serviceMethod: "GET"
+    monitoringInterval: 10
+    monitoringIntervalTimeUnit: MINUTES
+    enableFileLogging: true
+    fileLoggingInterval: HOURLY
+    enableLogsArchiving: true
+    logArchivingInterval: WEEKLY
+
+  - serviceId: 2
+    serviceName: "Sky World Services Portal"
+    serviceHost: "portal.skyworld.co.ke"
+    servicePort: 443
+    serviceResourceUri: "/"
+    serviceMethod: "GET"
+    monitoringInterval: 300
+    monitoringIntervalTimeUnit: SECONDS
+    enableFileLogging: false
+    fileLoggingInterval: DAILY
+    enableLogsArchiving: false
+    logArchivingInterval: WEEKLY
